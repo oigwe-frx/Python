@@ -47,7 +47,8 @@ Is a whole number. It has no decimal point and contains all counting numbers (1,
 ```float``` 
 Is a decimal number. It can be used to represent fractional quantities as well as precise measurements. If you were measuring the length of your bedroom wall, calculating the average test score of a seventh-grade class, or storing a baseball player’s batting average for the 1998 season you would likely use a float.
 
-Numbers can be assigned to variables or used literally in a program:
+Numbers can be assigned to variables ```a_float = 2.1
+``` or used literally ```2.1``` in a program:
 
 ```
 an_int = 2
@@ -57,3 +58,85 @@ print(an_int + 3)
 # Output: 5
 ```
 
+# Calculations
+Python performs the arithmetic operations of addition, subtraction, multiplication, and division with +, -, *, and /.
+
+```
+# Prints "500"
+print(573 - 74 + 1)
+ 
+# Prints "50"
+print(25 * 2)
+ 
+# Prints "2.0"
+print(10 / 5)
+```
+Python converts all ints to floats before performing division. In older versions of Python (2.7 and earlier) this conversion did not happen, and integer division would always round down to the nearest integer.
+
+Division can throw its own special error: 
+__ZeroDivisionError:__ Python will raise this error when attempting to divide by 0.
+
+# Changing Numbers
+
+Variables that are assigned numeric values can be treated the same as the numbers themselves. 
+- Two variables can be added together, divided by 2, and multiplied by a third variable without Python distinguishing between the variables and literals (like the number 2 in this example).
+- Performing arithmetic on variables does not change the variable — you can only update a variable using the = sign.
+
+```
+coffee_price = 1.50
+number_of_coffees = 4
+ 
+# Prints "6.0"
+print(coffee_price * number_of_coffees)
+# Prints "1.5"
+print(coffee_price)
+# Prints "4"
+print(number_of_coffees)
+ 
+# Updating the price 
+coffee_price = 2.00
+ 
+# Prints "8.0"
+print(coffee_price * number_of_coffees)
+# Prints "2.0"
+print(coffee_price)
+# Prints "4"
+print(number_of_coffees)
+```
+
+# Exponents
+
+Python can also perform exponentiation. 
+
+Since this operation is so related to multiplication, we use the notation **.
+
+```
+# 2 to the 10th power, or 1024
+print(2 ** 10)
+ 
+# 8 squared, or 64
+print(8 ** 2)
+ 
+# 9 * 9 * 9, 9 cubed, or 729
+print(9 ** 3)
+ 
+# We can even perform fractional exponents
+# 4 to the half power, or 2
+print(4 ** 0.5)
+```
+
+# Modulo
+
+Python offers a companion to the division operator called the modulo operator. The modulo operator is indicated by % and gives the remainder of a division calculation. If the number is divisible, then the result of the modulo operator will be 0.
+
+```
+# Prints 4 because 29 / 5 is 5 with a remainder of 4
+print(29 % 5)
+ 
+# Prints 2 because 32 / 3 is 10 with a remainder of 2
+print(32 % 3)
+ 
+# Modulo by 2 returns 0 for even numbers and 1 for odd numbers
+# Prints 0
+print(44 % 2)
+```
