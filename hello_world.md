@@ -127,7 +127,9 @@ print(4 ** 0.5)
 
 # Modulo
 
-Python offers a companion to the division operator called the modulo operator. The modulo operator is indicated by % and gives the remainder of a division calculation. If the number is divisible, then the result of the modulo operator will be 0.
+Python offers a companion to the division operator called the modulo operator.
+
+The modulo operator is indicated by % and gives the remainder of a division calculation. If the number is divisible, then the result of the modulo operator will be 0.
 
 ```
 # Prints 4 because 29 / 5 is 5 with a remainder of 4
@@ -140,3 +142,68 @@ print(32 % 3)
 # Prints 0
 print(44 % 2)
 ```
+
+# Concatenation
+
+The + operator doesn’t just add two numbers, it can also “add” two strings! 
+
+The process of combining two strings is called string concatenation. 
+
+Performing string concatenation creates a brand new string comprised of the first string’s contents followed by the second string’s contents (without any added space in-between).
+
+```
+greeting_text = "Hey there!"
+question_text = "How are you doing?"
+full_text = greeting_text + question_text
+ 
+# Prints "Hey there!How are you doing?"
+print(full_text)
+```
+
+# Plus Equals
+
+When you have a number saved in a variable and want to add to the current value of the variable, you can use the += (plus-equals) operator.
+
+```
+# First we have a variable with a number saved
+number_of_miles_hiked = 12
+ 
+# Then we need to update that variable
+# Let's say we hike another two miles today
+number_of_miles_hiked += 2
+ 
+# The new value is the old value
+# Plus the number after the plus-equals
+print(number_of_miles_hiked)
+# Prints 14
+```
+
+The plus-equals operator also can be used for string concatenation, like so:
+
+```
+hike_caption = "What an amazing time to walk through nature!"
+ 
+# Almost forgot the hashtags!
+hike_caption += " #nofilter"
+hike_caption += " #blessed"
+```
+
+# Multi-line Strings
+
+Python strings are very flexible, but if we try to create a string that occupies multiple lines we find ourselves face-to-face with a SyntaxError. 
+
+Python offers a solution: multi-line strings. By using three quote-marks (""" or ''') instead of one, we tell the program that the string doesn’t end until the next triple-quote. 
+
+This method is useful if the string being defined contains a lot of quotation marks and we want to be sure we don’t close it prematurely.
+
+```
+leaves_of_grass = """
+Poets to come! orators, singers, musicians to come!
+Not to-day is to justify me and answer what I am for,
+But you, a new brood, native, athletic, continental, greater than
+  before known,
+Arouse! for you must justify me.
+"""
+```
+
+
