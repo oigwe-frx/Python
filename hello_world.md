@@ -206,4 +206,25 @@ Arouse! for you must justify me.
 """
 ```
 
+# User Input
 
+Another way to assign a value to a variable is through user input.
+
+The input() function requires a prompt message, which it will print out for the user before they enter the new information. For example:
+```
+likes_snakes = input("Do you like snakes? ")
+
+# The variable likes_snakes would be assigned a value of the user’s answer.
+
+```
+
+Once you have that information stored as a variable you can use it to simulate interaction:
+
+```
+>>> favorite_fruit = input("What is your favorite fruit? ")
+What is your favorite fruit? mango
+ 
+>>> print("Oh cool! I like " + favorite_fruit + " too, but I think my favorite fruit is apple.")
+Oh cool! I like mango too, but I think my favorite fruit is apple.
+ 
+```
