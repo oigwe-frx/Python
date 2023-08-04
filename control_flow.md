@@ -72,9 +72,83 @@ def dave_check(user_name):
 
 # Relational Operators II
 
+- ```>``` greater than
+- ```>=``` greater than or equal to
+- ```<``` less than
+- ```<=``` less than or equal to
 
+ ```
+ if age <= 13:
+ print("Sorry, parental control required")
+ ```
+
+```
+def greater_than(x,y):
+  if x == y:
+    return "These numbers are the same"
+
+
+def graduation_reqs(credits):
+  if credits >= 120:
+    return "You have enough credits to graduate!"
+
+print(graduation_reqs(120))
+```
+  
 # Boolean Operations: and
+
+There are three boolean operators that we will cover:
+
+- and ```&&```
+- or  ```||```
+- not ```!=```
+
+```
+(1 + 1 == 2) and (2 + 2 == 4)   # True
+ 
+(1 > 9) and (5 != 6)            # False
+ 
+(1 + 1 == 2) and (2 < 1)        # False
+ 
+(0 == 10) and (1 + 1 == 1)      # False
+ 
+```
+
 # Boolean Operators: or
+
+```
+True or (3 + 4 == 7)    # True
+(1 - 1 == 0) or False   # True
+(2 < 0) or True         # True
+(3 == 8) or (3 > 4)     # False
+ 
+```
 # Boolean Operators: not
+
+```
+not 1 + 1 == 2  # False
+not 7 < 0       # True
+```
 # Else Statement
+
+```
+if weekday:
+  print("wake up at 6:30")
+else:
+  print("sleep in")
+```
+
 # Else If Statements
+
+```
+print("Thank you for the donation!")
+ 
+if donation >= 1000:
+  print("You've achieved platinum status")
+elif donation >= 500:
+  print("You've achieved gold donor status")
+elif donation >= 100:
+  print("You've achieved silver donor status")
+else:
+  print("You've achieved bronze donor status")
+```
