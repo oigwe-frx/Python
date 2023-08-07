@@ -329,6 +329,28 @@ print(names) // ['Xander', 'Willow', 'Giles', 'Buffy', 'Angel']
 
 __Note:__ The .sort() method does not return any value and thus does not need to be assigned to a variable since it modifies the list directly. If we do assign the result of the method, it would assign the value of None to the variable.
 
+A second way of sorting a list in Python is to use the built-in function ___sorted()___.
+
+The sorted() function is different from the .sort() method in two ways:
+
+- It comes before a list, instead of after as all built-in functions do.
+- It generates a new list rather than modifying the one that already exists.
+
+```
+names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+sorted_names = sorted(names)
+print(sorted_names) //['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+
+sorted did not change names:
+
+print(names)
+['Xander', 'Buffy', 'Angel', 'Willow', 'Giles']
+```
+
+ 
+
+
+
 
 
 
