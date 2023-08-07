@@ -167,6 +167,8 @@ print(class_name_hobbies) //[["Jenny", "Meditation"], ["Alexus", "Photography"],
 ```
 
 
+# Methods
+
 ## Insert
 
 The Python list method ___.insert()___ allows us to add an element to a specific index in a list.
