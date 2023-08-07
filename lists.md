@@ -167,6 +167,97 @@ print(class_name_hobbies) //[["Jenny", "Meditation"], ["Alexus", "Photography"],
 ```
 
 
+## Insert
+
+The Python list method ___.insert()___ allows us to add an element to a specific index in a list.
+
+The .insert() method expects two inputs, the first being a numerical index, followed by any value as the second input:
+
+- The index you want to insert into.
+- The element you want to insert at the specified index.
+
+The .insert() method will handle shifting over elements and can be used with negative indices.
+
+```
+store_line = ["Karla", "Maxium", "Martim", "Isabella"]
+store_line.insert(2, "Vikor") //  ['Karla', 'Maxium', 'Vikor', 'Martim', 'Isabella']
+```
+
+
+## Pop
+
+Python gives us a method to remove elements at a specific index using a method called __.pop()__.
+
+The .pop() method takes an optional single input:
+
+- The index for the element you want to remove.
+- The method can be called without a specific index. Using .pop() without an index will remove whatever the last element of the list is. In our case "Clowns 101" gets removed.
+- .pop() is unique in that it will return the value that was removed. If we wanted to know what element was deleted, simply assign a variable to the call of the .pop() method. In this case, we assigned it to removed_element.
+- ___Note:___ Passing in an index that does not exist or calling .pop() on an empty list will both result in an IndexError.
+
+
+
+```
+cs_topics = ["Python", "Data Structures", "Balloon Making", "Algorithms", "Clowns 101"]
+cs_topics.pop(2)
+print(cs_topics) //['Python', 'Data Structures', 'Algorithms']
+```
+
+## Range
+
+The function __range()__ takes a single input, and generates numbers starting at 0 and ending at the number __before__ the input.
+
+The range() function is unique in that it creates a range object. It is not a typical list like the ones we have been working with.
+
+In order to use this object as a list, we have to first convert it using another built-in function called __list()__
+
+```
+zero_to_seven = range(7)
+print(list(zero_to_seven)) // [0, 1, 2, 3, 4, 5, 6]
+
+```
+
+By default, range() creates a list starting at 0. However, if we call range() with two inputs, we can create a list that starts at a different number.
+
+```
+my_list = range(2, 9)
+print(list(my_list)) //[2, 3, 4, 5, 6, 7, 8]
+```
+If we use a third input, we can create a list that “skips” numbers.
+
+For example, range(2, 9, 2) will give us a list where each number is 2 greater than the previous number:
+
+```
+my_range2 = range(2, 9, 2)
+print(list(my_range2)) // [2, 4, 6, 8]
+```
+We can skip as many numbers as we want!
+
+```
+my_range3 = range(1, 100, 10)
+print(list(my_range3)) // [1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
+
+Our list stops at 91 because the next number in the sequence would be 101, which is greater than or equal to 100 (our stopping point).
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
