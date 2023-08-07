@@ -347,7 +347,63 @@ print(names)
 ['Xander', 'Buffy', 'Angel', 'Willow', 'Giles']
 ```
 
- 
+ # Tuple
+
+A data structure that allows the engineer to store multiple pieces of data.
+A tuple is very similar to a list, except a tuple is immutable (can't be changed, after it is created)
+
+```
+my_info = ("O", 31, "Dev")
+```
+Tuples have indices
+
+```
+my_info[0] //"O"
+```
+
+## Unpacking a Tuple
+
+You can destructure a tuple
+
+```
+name, age, occupation = my_info
+
+print(name) // "O"
+etc
+```
+As long as the number of variables on the left is the number of data indexes in the tuple, the tuple can be unpacked
+
+__NOTE:__ The order that the data is stored in the tuple matters. The order of the variables must align with the data stored in the tuple
+
+## One Element Tuple
+
+If a tuple is being created with only one element, then the element must have a trailing comma placed after it
+
+```
+one_element_tuple = (4,)
+```
+Without the trailing comma, the element will be read as an element wrapped in parentheses rather than a tuple
+
+## List vs Tuple
+
+- Lists are used for storing data that is similar, and/or the data will change
+
+- A Tuple means that the data will not be modified. Usually, there is an association with the data stored, not necessary that the data types are the same
+
+
+# Zip
+
+The ___zip()___ function allows us to quickly combine associated data-sets without needing to rely on multi-dimensional lists. 
+
+
+
+
+
+
+
+
+
+
 
 
 
