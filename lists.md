@@ -239,7 +239,115 @@ print(list(my_range3)) // [1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
 
 Our list stops at 91 because the next number in the sequence would be 101, which is greater than or equal to 100 (our stopping point).
 
+``` 
+
+## Length
+
+When we apply ___len()___ to a list, we get the number of elements in that list:
+
 ```
+my_list = [1, 2, 3, 4, 5]
+ 
+print(len(my_list)) // 5
+```
+
+
+## Slicing Lists 
+
+In Python, often we want to extract only a portion of a list. Dividing a list in such a manner is referred to as slicing.
+
+We can do this using the following syntax: ```list[start:end]```, where:
+
+- Inclusive - start is the index of the first element that we want to include in our selection.
+- Exclusive - end is the index of one more than the last index that we want to include.
+
+```
+letters = ["a", "b", "c", "d", "e", "f", "g"]
+sliced_list = letters[1:6]
+print(sliced_list) // ["b", "c", "d", "e", "f"]
+```
+If we want to select the first n elements of a list, we could use the following code:
+
+```
+fruits[:n]
+print(fruits[:3])
+```
+We can do something similar when we want to slice the last n elements in a list:
+
+```
+fruits[-n:] //Inclusive
+print(fruits[-2:]) // This code slices from the element at index -2 up through the last index.
+```
+
+## Counting in a List
+
+Suppose we have a list called letters that represents the letters in the word “Mississippi”:
+
+```letters = ["m", "i", "s", "s", "i", "s", "s", "i", "p", "p", "i"]```
+
+If we want to know how many times ```i``` appears in this word, we can use the list method called __.count()__:
+
+```
+num_i = letters.count("i")
+print(num_i) //4
+```
+Since .count() returns a value, we can assign it to a variable to use it.
+
+We can even use .count() to count element appearances in a two-dimensional list.
+
+```
+number_collection = [[100, 200], [100, 200], [475, 29], [34, 34]]
+
+# How often the sublist [100, 200] appears:
+
+num_pairs = number_collection.count([100, 200])
+print(num_pairs) //2
+```
+
+
+## Sorting Lists
+
+Often, we will want to sort a list in either numerical (1, 2, 3, …) or alphabetical (a, b, c, …) order.
+
+We can sort a list using the method ___.sort()___.
+
+```
+names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+names.sort()
+print(names) // ['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+```
+
+.sort() also provides us the option to go in reverse. Instead of sorting in ascending order like we just saw, we can do so in descending order.
+
+```
+names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+names.sort(reverse=True)
+print(names) // ['Xander', 'Willow', 'Giles', 'Buffy', 'Angel']
+```
+
+__Note:__ The .sort() method does not return any value and thus does not need to be assigned to a variable since it modifies the list directly. If we do assign the result of the method, it would assign the value of None to the variable.
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
