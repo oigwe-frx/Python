@@ -31,6 +31,7 @@ True and False are the only bool types, and any variable that is assigned one of
 Boolean variables can be created in several ways. The easiest way is to simply assign True or False to a variable:
 
 ```
+
 set_to_true = True
 set_to_false = False
 ```
@@ -152,3 +153,57 @@ elif donation >= 100:
 else:
   print("You've achieved bronze donor status")
 ```
+
+# Errors
+
+## Syntax Errors
+
+SyntaxError means there is something wrong with the way your program is written — punctuation that does not belong, a command where it is not expected, or a missing parenthesis can all trigger a SyntaxError.
+
+```
+File "script.py", line 1
+  print(Hello world!)
+                  ^
+SyntaxError: invalid syntax
+```
+
+Some common syntax errors are:
+- Misspelling a Python keyword.
+- Missing colon :.
+- Missing closing parenthesis ), square bracket ], or curly brace }.
+
+## Name Errors
+
+A NameError is reported by the Python interpreter when it detects a variable that is unknown.
+
+```
+File "script.py", line 1, in <module>
+    print(score)
+NameError: name 'score' is not defined
+```
+
+Some common name errors are:
+
+- Misspelling a variable name.
+- Forgetting to define a variable.
+
+## Type Errors
+
+A TypeError is reported by the Python interpreter when an operation is applied to a variable of an inappropriate type.
+
+```
+piggy_bank = '2' + 0.25
+
+#----
+Traceback (most recent call last):
+  File "script.py", line 1, in <module>
+    piggy_bank = '2' + 0.25
+TypeError: must be str, not float
+```
+Some common type errors are:
+
+- Accidentally adding or subtracting a string value.
+- Call a function on something of the incorrect type.
+
+
+
