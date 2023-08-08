@@ -61,14 +61,71 @@ while count <= 3:
   count += 1
 ```
 
-## Lists
+# Lists
 
-```length = len(ingredients)
+length = len(ingredients)
+
+```
 index = 0
  
 while index < length:
   print(ingredients[index])
   index += 1
 ```
+
+# Breaks
+
+```
+items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
+ 
+print("Checking the sale list!")
+ 
+for item in items_on_sale:
+  print(item)
+  if item == "knit dress":
+    break
+ 
+print("End of search!")
+```
+
+When the program hits a break statement it immediately terminates a loop. For example:
+
+
+# Continue
+
+While the break control statement will come in handy, there are other situations where we don’t want to end the loop entirely. What if we only want to skip the current iteration of the loop?
+
+```
+big_number_list = [1, 2, -1, 4, -5, 5, 2, -9]
+
+for i in big_number_list:
+  if i <= 0: // Goal to print out only positive numbers
+    continue
+  print(i)  // 1 2 4 5 2 
+ ```
+
+```
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for age in ages:
+  if age < 21:
+    continue
+  else: 
+    print(age)
+```
+
+# Nested Loops
+
+```
+# Loop through each sublist
+for team in project_teams:
+
+  # Loop elements in each sublist
+  for student in team:
+    print(student)
+
+```
+
+
 
 
