@@ -395,6 +395,36 @@ Without the trailing comma, the element will be read as an element wrapped in pa
 
 The ___zip()___ function allows us to quickly combine associated data-sets without needing to rely on multi-dimensional lists. 
 
+Suppose that we had a list of names and a list of heights:
+
+```
+names = ["Jenny", "Alexus", "Sam", "Grace"]
+heights = [61, 70, 67, 64]
+```
+If we wanted to create a nested list that paired each name with a height, we could use the built-in function zip().
+
+The zip() function takes two (or more) lists as inputs and returns an object that contains a list of pairs. Each pair contains one element from each of the inputs. This is how we would do it for our names and heights lists:
+
+```
+names_and_heights = zip(names, heights)
+print(names_and_heights) // <zip object at 0x7f1631e86b48>
+
+```
+
+This zip object contains the location of this variable in our computer’s memory.
+
+it is fairly simple to convert this object into a useable list by using the built-in function list():
+
+```
+converted_list = list(names_and_heights)
+print(converted_list)
+```
+Our inner lists don’t use square brackets [ ] around the values. This is because they have been converted into tuples (an immutable type of list).
+
+
+
+
+
 
 
 
